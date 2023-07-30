@@ -1,0 +1,20 @@
+baseURL = 'https://aykevl.nl/'
+languageCode = 'en-us'
+title = 'Ayke van Laethem'
+theme = "minimal"
+enableGitInfo = true
+
+[author]
+  name = 'Ayke van Laethem'
+
+[permalinks]
+  posts = "/:year/:month/:filename"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.goldmark.extensions]
+  typographer = false
+
+[markup.highlight]
+  noClasses = false

@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main>
+{{ range where .Site.RegularPages.ByPublishDate.Reverse ".Section" "posts" }}
+  <article class="post">
+    <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+    <time datetime="{{ .PublishDate.Format "2006-01-02" }}" class="authored">{{ .PublishDate.Format "2006-01-02" }}</time>
+    <p>{{ .Summary }}</p>
+  </article>
+{{ end }}
+</main>
+{{ end }}

@@ -1,0 +1,8 @@
+name = "Minimal"
+license = "MIT"
+description = "Minimal theme for https://aykevl.nl/"
+min_version = "0.41.0"
+
+[author]
+  name = "Ayke van Laethem"
+  homepage = "https://aykevl.nl/"
