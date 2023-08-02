@@ -5,7 +5,8 @@
   {{- if .IsHome }}{{ $title = .Site.Title }}{{ end }}
   <title>{{ $title }}</title>
   <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <link rel="stylesheet" type="text/css" href="/css/chroma-light.css">
+  <link rel="stylesheet" type="text/css" href="/css/chroma-dark.css">
+  <link rel="stylesheet" type="text/css" href="/css/chroma-light.css" media="(prefers-color-scheme: light)"/>
   <link rel="icon" href="/img/favicon.png"/>
   <link rel="icon" sizes="128x128" href="/img/logo-128.png"/>
   <link rel="alternate" type="application/rss+xml" href="/index.xml" title="Ayke van Laethem" />
