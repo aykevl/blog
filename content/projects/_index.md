@@ -4,6 +4,6 @@ title: Projects
 
 Over the years I've made a few electronic projects, some of which I've written about.
 
-## [LED strip](ledstrip)
+## [LED strip](/projects/ledstrip)
 
-A long time ago, I made a [LED strip controller using a DigiSpark and two buttons](ledstrip) - nothing else.
+A long time ago, I made a [LED strip controller using a DigiSpark and two buttons](/projects/ledstrip) - nothing else.
