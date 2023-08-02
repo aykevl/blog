@@ -1,7 +1,7 @@
 ---
 title: "What RGB and sRGB mean"
-date: 2019-12-29
-lastmod: 2019-12-29
+date: 2019-12-29T16:42:06
+lastmod: 2019-12-29T16:42:06
 summary: "What RGB really means, what sRGB and gamma are and how to correctly blend colors."
 ---
 Say you have a gray color, something like `rgb(127, 127, 127)`. What's the amount of light that comes out of that pixel, relative to white pixels? You might be thinking it is 50% - after all, it's halfway between 0 and 255 and it _looks_ halfway there. But it isn't. The light output of an average monitor would be more like 18% relative to a fully white pixel.

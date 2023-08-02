@@ -1,7 +1,7 @@
 ---
 title: "Fix 'jumping scrollbar' issue using only CSS"
-date: 2014-09-08
-lastmod: 2015-01-23
+date: 2014-09-08T22:52:23
+lastmod: 2015-01-23T14:59:50
 summary: "I discovered a technique to prevent page jumping when navigating between short and long pages without showing the scroll bar all the time."
 ---
 When centering a page with CSS like `margin: 0 auto;`, there's a small gotcha: the page will 'jump' a little on certain browsers when navigating between short and long pages. This is because the scrollbar gets hidden with short pages and is shown again with longer pages, which makes the page move a little horizontally.

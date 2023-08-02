@@ -1,7 +1,7 @@
 ---
 title: "How the TinyGo playground simulates hardware"
-date: 2019-07-17
-lastmod: 2019-07-17
+date: 2019-07-17T20:45:33
+lastmod: 2019-07-17T20:45:33
 summary: "The TinyGo playground simulates real hardware, including an e-paper display. How can it do such things? This post explains a bit about how the playground works to make this possible."
 ---
 You may have seen the recently launched [TinyGo playground](https://play.tinygo.org/). It works just like the [Go playground](https://play.golang.org/), except that it also simulates real hardware in your browser like an [e-paper display](https://godoc.org/tinygo.org/x/drivers/waveshare-epd/epd2in13). There is no emulation like QEMU or [Unicorn](https://www.unicorn-engine.org/). There is no real hardware involved. So you might wonder, how does this magic work?

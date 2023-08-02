@@ -1,7 +1,7 @@
 ---
 title: "Interfaces in TinyGo"
-date: 2018-12-08
-lastmod: 2018-12-08
+date: 2018-12-08T23:36:43
+lastmod: 2018-12-08T23:57:49
 summary: "How TinyGo implements Go interfaces in a radically different way, avoiding most memory allocations and reducing code size."
 ---
 Interfaces in Go are very useful in the way they make it easy to decouple code. It might even be my favorite feature, perhaps only behind goroutines+channels. Unfortunately, as you might imagine their implementation isn't very straightforward. In this post, I'll briefly explain how interfaces are implemented in the main Go compilers and what TinyGo does differently to reduce code size.

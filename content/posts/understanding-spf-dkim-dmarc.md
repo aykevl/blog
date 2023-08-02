@@ -1,7 +1,7 @@
 ---
 title: "Understanding modern mail authentication systems: SPF, DKIM and DMARC"
-date: 2017-08-17
-lastmod: 2017-10-03
+date: 2017-08-17T17:54:30
+lastmod: 2017-10-03T21:47:28
 summary: "Explains how modern email authentication systems work together to protect the \"from\" header in email. This makes phishing detectable and spamming more difficult."
 ---
 Email. We use it every day. It's critical for most businesses and even though many alternative systems have been developed, it just refuses to die. At the same time, it's a very insecure and spam-prone system, as you will already know. To fix that, there has been quite some development work going on the last years to improve the situation regarding encryption and spam prevention. In a [future blog post](/2017/10/smtp-starttls) I will take a look at encryption but in this blog post I'm going to look at the latter: spam prevention, or rather, attributing email messages to sending domains so it gets easier to build reputation systems. When you know which messages are good, it's easier to drop the bad.

@@ -1,7 +1,7 @@
 ---
 title: "Installing Debian on a Btrfs subvolume"
-date: 2015-11-24
-lastmod: 2015-11-24
+date: 2015-11-24T12:01:55
+lastmod: 2015-11-24T12:03:51
 summary: "How to install Debian on a Btrfs subvolume to easily make system snapshots."
 ---
 In Debian 8 (Jessie), installing on a Btrfs subvolume outside the root is kind of non-intuitive. There are probably other ways, but the way described here is how it works for me.

@@ -1,7 +1,7 @@
 ---
 title: "Garbage collection in TinyGo"
-date: 2020-09-24
-lastmod: 2020-09-24
+date: 2020-09-24T22:22:10
+lastmod: 2020-09-24T22:22:10
 summary: "An explanation of how garbage collectors work including some pseudocode how a real GC could be implemented."
 ---
 Garbage collection is often seen like a kind of dark magic. And while it is possible to make it very complex, it is possible to write a simple and understandable GC that is still useful in practice.

@@ -1,7 +1,7 @@
 ---
 title: "Using the JDY-08 module"
-date: 2017-05-11
-lastmod: 2017-05-12
+date: 2017-05-11T00:00:24
+lastmod: 2017-05-12T20:42:49
 summary: "A look at the JDY-08, a cheap BLE module found on the online Chinese markets. It works, but it turns out that it isn't really useful with the original firmware."
 ---
 I'm noting here what I found about the cheap JDY-08 module that's available on [various Chinese markets](https://www.aliexpress.com/wholesale?SearchText=jdy-08). It is a very small device, probably made as a cheaper version of the [HM-11](http://wiki.seeed.cc/Bluetooth_V4.0_HM_11_BLE_Module/). By default, it has different firmware on it which doesn't work as well as the official firmware.

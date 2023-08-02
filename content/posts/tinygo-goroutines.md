@@ -1,7 +1,7 @@
 ---
 title: "Goroutines in TinyGo"
-date: 2019-02-25
-lastmod: 2019-02-25
+date: 2019-02-25T13:07:57
+lastmod: 2019-02-25T13:07:57
 summary: "TinyGo uses LLVM coroutines to implement goroutines. This post explains what coroutines are and how they're used to implement goroutines."
 ---
 Go uses goroutines for mostly-cooperative multitasking. In general, each goroutine has a separate stack where it can store things like temporary values and return addresses. At the moment the main Go compiler starts out with a 2kB stack for each goroutine and grows it as needed.

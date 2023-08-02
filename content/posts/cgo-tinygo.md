@@ -1,7 +1,7 @@
 ---
 title: "CGo improvements in TinyGo"
-date: 2021-11-18
-lastmod: 2021-11-18
+date: 2021-11-18T15:32:27
+lastmod: 2021-11-18T15:32:27
 summary: "CGo is faster in TinyGo, here's how that works."
 ---
 CGo support is pretty important in Go to interact with existing libraries written in C. However, it's also slow. Right? Not so in TinyGo.

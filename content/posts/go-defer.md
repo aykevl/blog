@@ -1,7 +1,7 @@
 ---
 title: "Defer is complicated"
-date: 2018-12-04
-lastmod: 2018-12-04
+date: 2018-12-04T13:01:50
+lastmod: 2018-12-04T13:01:50
 summary: "The `defer` keyword in Go does much more than you might think, leading to performance issues in some cases. Why is this?"
 ---
 This is a simple usage of the `defer` statement in Go:

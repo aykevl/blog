@@ -1,7 +1,7 @@
 ---
 title: "DTSync: bidirectional directory synchronisation between any number of replicas"
-date: 2017-04-07
-lastmod: 2017-04-10
+date: 2017-04-07T01:02:23
+lastmod: 2017-04-10T16:16:42
 summary: "A new bidirectional synchronization tool like Unison that can synchronize many distributed replicas"
 ---
 For years I've been using [Unison](https://www.cis.upenn.edu/~bcpierce/unison/) and it has served me very well. It is a reliable piece of software with many, many configuration options. But not without it's limitations. So I wrote my own synchronization program DTSync.

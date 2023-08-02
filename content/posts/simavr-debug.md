@@ -1,7 +1,7 @@
 ---
 title: "Debug AVR programs using simavr and avr-gdb"
-date: 2020-06-22
-lastmod: 2020-06-22
+date: 2020-06-22T21:03:44
+lastmod: 2020-06-22T21:03:44
 summary: "Quick note to get started with debugging AVR programs in a simulator"
 ---
 Lately I've been working on improving AVR support in LLVM. While more and more people are moving to more powerful Cortex-M chips, these small 8-bit chips are still used a lot and it would be nice to have good LLVM support for this architecture so that modern programming languages can be used, which are often built using LLVM. For this, I need a good debugger to debug miscompilations.

@@ -1,7 +1,7 @@
 ---
 title: "Safely Embedding JSON in JavaScript"
-date: 2015-07-10
-lastmod: 2015-07-10
+date: 2015-07-10T15:08:53
+lastmod: 2015-07-10T15:09:40
 summary: "How do you embed JSON in JavaScript? The naive approach turns out to have a XSS and DoS vulnerability, but this is easily fixed with a simple filter."
 ---
 One commonly cited advantage of JSON is that it is a subset of JavaScript and thus you can insert it easily in a `<script>` tag. Unfortunately, that's not completely true and even opens the door for [XSS](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS) attacks, as I discovered recently. But with a little escaping you can safely embed JSON in `<script>` tags.

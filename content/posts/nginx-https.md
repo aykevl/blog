@@ -1,7 +1,7 @@
 ---
 title: "Setting up HTTPS on nginx from start to finish"
-date: 2015-05-19
-lastmod: 2015-05-22
+date: 2015-05-19T13:32:00
+lastmod: 2015-05-22T21:56:48
 summary: "Turn a plain HTTP web site served with nginx into one with HTTPS and SPDY support. Includes StartSSL, Postfix and OCSP stapling."
 ---
 I recently switched from a hosting provider ([NearlyFreeSpeech.NET](/2015/01/nfsn), which I still recommend) to a VPS, for much more flexibility, and for some other benefits. As I was running a VPS anyway and NFSN isn't particularly fast (I'm obsessed with speed), I switched this website over to the VPS and in the process also set up HTTPS (TLS). This post documents how I set up TLS in nginx for future reference.

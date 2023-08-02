@@ -1,7 +1,7 @@
 ---
 title: "Managing phone addiction"
-date: 2017-06-25
-lastmod: 2017-06-25
+date: 2017-06-25T20:31:47
+lastmod: 2017-06-25T20:37:10
 summary: "A few tips on how to track how much you're addicted to your phone and how you can manage it. I give a short overview of how habits work. Then I describe how you can track how much you use your phone and give a few tips on breaking a few of those habits."
 ---
 So I have a problem with phone over-use. I'm currently somewhere in the order of unlocking it about 100 times per day and (more worryingly) using it for multiple hours per day.

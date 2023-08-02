@@ -1,7 +1,7 @@
 ---
 title: "Using AddressSanitizer and Valgrind on Android recovery"
-date: 2017-06-02
-lastmod: 2017-06-02
+date: 2017-06-02T00:09:56
+lastmod: 2017-06-02T00:11:26
 summary: "How to use memory checking tools inside an Android recovery to detect things like buffer overflows. A recovery system like TWRP is quite different from a normal Android image, so the official guides apply only partially and it needs some manual work to make these tools work. Here's how I did it."
 ---
 Debugging memory issues can be very hard or almost impossible when done by hand. Luckily it's relatively easy to detect memory issues with the proper tools. Unfortunately, using them while working on an Android recovery like TWRP is much harder, as the environment is very limited and a bit different from a normal Android system.

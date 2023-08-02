@@ -1,7 +1,7 @@
 ---
 title: "Intro to Rust on the STM32"
-date: 2017-06-04
-lastmod: 2017-06-04
+date: 2017-06-04T01:04:45
+lastmod: 2017-06-04T22:09:52
 summary: "How to write a simple Rust program for the STM32 \"blue pill\" board that's sold on AliExpress and Ebay for about $2. It turns out to be not too difficult."
 ---
 I recently ordered a simple STM32 board, which is a microcontroller board much like Arduino. It looks a lot like the [Arduino Nano](https://www.arduino.cc/en/Main/arduinoBoardNano). Coming from the Arduino ([AVR](https://en.wikipedia.org/wiki/Atmel_AVR)) world, I had a lot to learn. And just for fun, I increased the learning curve even more by not using the industry-standard C/C++ but [Rust](https://www.rust-lang.org/en-US/). While it took a few hours to get it up and running, I was actually surprised at how easy it was.

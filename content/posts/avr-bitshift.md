@@ -1,7 +1,7 @@
 ---
 title: "Optimizing constant bitshifts on AVR"
-date: 2021-02-24
-lastmod: 2021-02-24
+date: 2021-02-24T17:54:42
+lastmod: 2021-02-24T17:54:42
 summary: "The AVR architecture does not natively support arbitrary bit shifts. Therefore, compilers will have to be creative to make shifts short and fast. This post explores how a compiler could emit such constant shifts inline."
 ---
 The AVR instruction set used on microcontrollers from Atmel (now Microchip), does not have shift instructions like most other instruction sets. It can only shift by a single bit at a time, although compilers are often smart enough to shift in a more efficient way.

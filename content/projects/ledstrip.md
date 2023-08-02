@@ -1,6 +1,7 @@
 ---
 title: LED strip
 date: 2017-03-10
+lastmod: 2017-03-10T23:27:05
 ---
 
 I have made a LED strip based on the ATtiny85 / Digispark.

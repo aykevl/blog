@@ -1,7 +1,7 @@
 ---
 title: "Using PvGrub2 on Debian"
-date: 2017-12-04
-lastmod: 2018-01-10
+date: 2017-12-04T19:04:48
+lastmod: 2018-01-10T15:06:38
 summary: "Using pvgrub2 on Debian is very easy, and there is a little bit of documentation on the 'net, but not enough to cover all needs. I had to do some workarounds to enable pvgrub2 with btrfs."
 ---
 Recently I wanted to move my Xen domU over to [pvgrub2](https://wiki.xenproject.org/wiki/PvGrub2), the [grand old bootloader](https://en.wikipedia.org/wiki/GNU_GRUB) ported to Xen. It shouldn't be hard, but as I am using btrfs on my domU with a /boot inside a /system subvolume, I'm making it a bit harder for myself.

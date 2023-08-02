@@ -1,7 +1,7 @@
 ---
 title: "TinyGo Preview - how does it work?"
-date: 2022-05-08
-lastmod: 2022-05-08
+date: 2022-05-08T23:04:16
+lastmod: 2022-05-08T23:04:16
 summary: "I've updated play.tinygo.org to more accurately simulate hardware, and now also brought this feature to VS Code. But how does it work?"
 ---
 The [TinyGo Playground](https://play.tinygo.org/) can simulate actual development boards inside a web browser. This has been true for a while, but since I [last wrote about it](/2019/07/tinygo-plaground-simulator), it has gotten a big overhaul. And since today, it is [also supported in the VS Code extension](https://twitter.com/aykevl/status/1523280669325107200). So how does it work behind the scenes?

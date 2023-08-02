@@ -1,7 +1,7 @@
 ---
 title: "ESP32 and ESP8266 support in TinyGo"
-date: 2020-09-22
-lastmod: 2020-09-22
+date: 2020-09-22T13:42:11
+lastmod: 2020-09-22T13:42:11
 summary: "How ESP32/ESP8266 support got added to TinyGo, how we got there, and the current status of support."
 ---
 As you might have heard, we've added ESP32 and ESP8266 support to TinyGo last week in version 0.15. Here I go into some background on how this came to be and what the challenges were to add initial support for these chips.

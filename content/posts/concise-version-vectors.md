@@ -1,7 +1,7 @@
 ---
 title: "Concise version vectors"
-date: 2017-04-10
-lastmod: 2017-04-10
+date: 2017-04-10T16:15:03
+lastmod: 2017-04-10T16:23:03
 summary: "Concise version vectors is the algorithm behind DTSync. It is a distributed algorithm with low memory complexity, with barely any overhead of adding another replica."
 ---
 In a [previous blog post](/2017/04/dtsync) I've talked about a program I wrote, [`dtsync`](https://github.com/aykevl/dtsync). Now I would like to explain a bit about the algorithm that it uses.

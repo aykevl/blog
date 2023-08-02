@@ -1,7 +1,7 @@
 ---
 title: "Enforced STARTTLS for SMTP"
-date: 2017-10-03
-lastmod: 2017-10-03
+date: 2017-10-03T21:46:13
+lastmod: 2017-10-03T21:49:26
 summary: "While STARTTLS has traditionally been very sensitive to downgrade attacks, there are now two protocols to fix this: DANE and MTA-STS. I will take a look at how they work and how they can be implemented on your own domain."
 ---
 Traditionally, SMTP has been completely insecure. Transported in plain text, with no authentication whatsoever. Luckily, the plain text part changed in [RFC2487](https://tools.ietf.org/html/rfc2487), later updated as [RFC3207](https://tools.ietf.org/html/rfc3207). It introduced TLS encryption for SMTP, but unfortunately no authentication. This means that passive eavesdropping becomes impossible (if both sides implement STARTTLS) but active eavesdropping (MITM) is still possible (albeit a bit easier to detect).

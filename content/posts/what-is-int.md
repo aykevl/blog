@@ -1,7 +1,7 @@
 ---
 title: "What's the int type?"
-date: 2021-06-25
-lastmod: 2021-06-25
+date: 2021-06-25T17:01:44
+lastmod: 2021-06-25T17:01:44
 summary: "The int type is present in many programming languages, but their meaning varies. Unlike what many people think, it only indirectly related to pointer size or architecture word size."
 ---
 Many programming languages have an `int` type. It's an integer type but the name itself doesn't say much about what kind of numbers it can hold. Also, the meaning can vary a lot between programming languages. Let's take a look at what they mean across languages.

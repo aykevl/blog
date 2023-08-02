@@ -1,7 +1,7 @@
 ---
 title: "Flashing the HM-10 firmware on a JDY-08"
-date: 2017-05-12
-lastmod: 2017-05-12
+date: 2017-05-12T20:38:14
+lastmod: 2017-05-12T20:38:23
 summary: "Use CCLoader to flash the official HM-10 firmware on a cheap Chinese JDY-08 device. Unfortunately, the process doesn't result in a working device, but at least I got somewhere."
 ---
 In my [previous post](/2017/05/jdy-08) I looked into the JDY-08 trying to put it to some use. I actually got it working but the default firmware is very crippled and (for me most importantly) lacks any power saving features. I managed to write the official HM-10 firmware to it, although that's as far as I've come... The device didn't do much afterwards.

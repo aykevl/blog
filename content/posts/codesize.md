@@ -1,7 +1,7 @@
 ---
 title: "Code size optimization for microcontrollers"
-date: 2018-04-27
-lastmod: 2018-04-27
+date: 2018-04-27T18:28:44
+lastmod: 2018-04-27T18:28:44
 summary: "How to optimize code size for microcontrollers, including compiler options and lots of coding habits that produce smaller and often more efficient code."
 ---
 Microcontrollers can vary greatly in the amount of available flash (32kB - 512kB is common) and thus how big the programs can be running on them. This means a common problem is not having enough ROM/flash for a project. While working on [MicroPython](https://micropython.org/) and building a [boot loader](/2018/01/mbr-softdevice-internals) for a microcontroller I've figured out all kinds of ways to reduce code size. Here is what I've found out so far, from easy to hard.

@@ -1,7 +1,7 @@
 ---
 title: "LLVM from a Go perspective"
-date: 2019-04-28
-lastmod: 2019-05-14
+date: 2019-04-28T17:21:54
+lastmod: 2019-05-14T15:27:19
 summary: "A high-level overview of LLVM IR, showing how two simple Go functions can be translated to IR."
 ---
 Developing a compiler is an enormous task. Luckily, the advent of compiler libraries such as LLVM make this a whole lot easier, making it possible for a single person to develop a new language that is close to C in terms of performance. Unfortunately, LLVM is an enormous piece of software with little documentation. To try to remedy that, I'll show some code samples in Go and show how they translate to [Go SSA](https://godoc.org/golang.org/x/tools/go/ssa) and then to LLVM IR using the [TinyGo](https://tinygo.org/) compiler. Both the Go SSA and the LLVM IR have been edited a bit for clarity to remove stuff that's not relevant to this explanation.

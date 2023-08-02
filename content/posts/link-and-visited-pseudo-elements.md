@@ -1,7 +1,7 @@
 ---
 title: ":link and :visited are mutually exclusive"
-date: 2014-12-13
-lastmod: 2014-12-13
+date: 2014-12-13T00:54:34
+lastmod: 2014-12-13T01:01:38
 summary: "I discovered that the CSS pseudo-classes `:link` and `:visited` are mutually exclusive. This in contrast to what may seem more logical, that is, that `:link` applies to all links."
 ---
 One thing that bit me once while writing some CSS, was the `:link` pseudo-class. Apparently, it is applied to all links *that have not yet been visited*. This is in contrast to what, for example, the MDN docs say and what I had assumed based on the name (I would assume that `:link` refers to all links, not just the not-yet-visited ones).

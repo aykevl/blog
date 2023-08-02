@@ -18,10 +18,10 @@ def main():
         f.write('---\n')
         f.write('title: %s\n' % json.dumps(title))
         if published:
-            f.write('date: %s\n' % datetime.fromtimestamp(published).strftime('%Y-%m-%d'))
+            f.write('date: %s\n' % datetime.fromtimestamp(published).strftime('%Y-%m-%dT%H:%M:%S'))
         else:
             f.write('draft: true\n')
-        f.write('lastmod: %s\n' % datetime.fromtimestamp(modified).strftime('%Y-%m-%d'))
+        f.write('lastmod: %s\n' % datetime.fromtimestamp(modified).strftime('%Y-%m-%dT%H:%M:%S'))
         f.write('summary: %s\n' % json.dumps(summary))
         f.write('---\n')
         f.write(text)

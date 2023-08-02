@@ -1,7 +1,7 @@
 ---
 title: "Using Arduino on the \"blue pill\" STM32F103 boards"
-date: 2017-06-06
-lastmod: 2017-06-06
+date: 2017-06-06T19:47:41
+lastmod: 2017-06-06T19:47:41
 summary: "As I gave up on Rust (for now), I tried setting up the Arduino environment to work with the \"blue pill\" board. It turns out to be quite easy, although there were a few small issues with the setup. You'll still need a (cheap) SWD programmer, though."
 ---
 I have recently bought one of those "[blue pill](http://wiki.stm32duino.com/index.php?title=Blue_Pill)" development boards from the [Chinese market](https://www.aliexpress.com/wholesale?SearchText=stm32+minimum). It's a small device that's quite capable, but more importantly, it's extremely cheap. The idea was to get started in ARM Cortex-M development with something simple.

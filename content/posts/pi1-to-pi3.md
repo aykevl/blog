@@ -1,7 +1,7 @@
 ---
 title: "Putting a Raspberry Pi 1 SD card into a Pi 3"
-date: 2017-03-19
-lastmod: 2017-03-19
+date: 2017-03-19T03:34:37
+lastmod: 2017-03-19T03:41:34
 summary: "How to move an installed SD card from a Pi 1 to a Pi 3, or make it possible to use them both. There are a few tricks to get the network running on both devices."
 ---
 I have an older Raspberry Pi 1B (not the 1B+, really the older 1B[^1]). It has two USB ports and a standard-size SD card (no microSD yet). But I have gotten a Raspberry 3B that I needed for school, and I didn't want to reuse my old Pi that I used as sensor and sound server.

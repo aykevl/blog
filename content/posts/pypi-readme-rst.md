@@ -1,7 +1,7 @@
 ---
 title: "Uploading README.rst to PyPI"
-date: 2017-07-23
-lastmod: 2017-07-23
+date: 2017-07-23T18:54:08
+lastmod: 2017-07-23T18:57:40
 summary: "My experience with making a Python package and uploading it to PyPI. Sometimes, such systems aren't as sophisticated as one might expect."
 ---
 TL;DR: if you just want to add a `README.rst` file to a PyPI package, do something like this:

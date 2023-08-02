@@ -1,7 +1,7 @@
 ---
 title: "DMA on the SAMD21"
-date: 2019-09-19
-lastmod: 2019-09-20
+date: 2019-09-19T13:05:40
+lastmod: 2019-09-20T16:07:12
 summary: "How to configure DMA on the SAMD21, for example to use it with SPI."
 ---
 Recently I wanted to write a super-fast driver for SAMD21 chips to drive hub75 screens. You know, those LED matrices sold by [Adafruit](https://www.adafruit.com/product/607) and on the various Chinese web shops. I believe you don't actually need an FPGA for these screens and I want to prove that a performant microcontroller will also work. For that to work, you need SPI with DMA, otherwise you have to choose between sending data and calculating the next frame which will sacrifice performance. Therefore I needed DMA to start the transfer so most of the CPU could be dedicated to rendering the next frame instead of clocking out the bits. Unfortunately, there are very (if any) few accessible tutorials on how DMA (or DMAC) works on the SAMD21, so I decided to write my own.

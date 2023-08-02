@@ -1,7 +1,7 @@
 ---
 title: "Internals of the MBR in Nordic SoftDevices"
-date: 2018-01-16
-lastmod: 2018-01-16
+date: 2018-01-16T00:08:52
+lastmod: 2018-01-16T19:49:27
 summary: "Nordic BLE chips contain a proprietary SoftDevice implementing the BLE stack. In this post, I will explain how the MBR region works and how to write your own."
 ---
 For some time, I've been working on a [bootloader/DFU for Nordic BLE chips](https://github.com/aykevl/micropython/tree/nrf-dfu-mbr-wip/ports/nrf/dfu) (nRF51822, nRF52832). If you don't know, these are small microcontrollers with on-board Bluetooth Low Energy. They use a so-called SoftDevice which is a binary blob implementing BLE (see [this video](https://www.youtube.com/watch?v=tZjlixQPO-Q)). These chips are relatively cheap, yet very powerful. Certainly much nicer to work with than the [JDY-08](/2017/05/jdy-08).

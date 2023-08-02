@@ -1,7 +1,7 @@
 ---
 title: "South: stateless authenticated sessions for HTTP in Go"
-date: 2015-01-28
-lastmod: 2015-06-17
+date: 2015-01-28T22:09:13
+lastmod: 2015-06-17T15:21:03
 summary: "I have written a Go package for stateless authentication using HMAC. I believe this system is in practice just as secure as session IDs without having to store state on the server, making authentication a whole lot easier."
 ---
 Usually, when you want to provide HTTP sessions, you just use your framework's way of managing sessions. Simple and secure, as it should be. Recently I was working on a web application written in [Go](http://golang.org/) (this blog!) that doesn't use any framework. And as I didn't want a database to manage sessions (it felt too  heavy to me), I went looking for other solutions. Unfortunately, there weren't any so I did it myself, trying to copy others as much as possible as, of course, [I suck at cryptography](http://www.happybearsoftware.com/you-are-dangerously-bad-at-cryptography.html).
