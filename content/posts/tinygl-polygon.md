@@ -49,7 +49,7 @@ To draw this line, we convert it to a polygon to be filled:
 A polygon can be converted to a number of trapezoids that when XORed together reproduce the original polygon. Trapezoids are made by drawing the edge horizontally until it falls entirely over the right edge, like the black areas here:
 
 ![](/assets/tinygl-polygon-trapezoidA.svg)
-![](/assets/tinygl-polygon-trapezoidB.svg)
+![](/assets/tinygl-polygon-trapezoidB.svg)  
 ![](/assets/tinygl-polygon-trapezoidC.svg)
 ![](/assets/tinygl-polygon-trapezoidD.svg)
 
