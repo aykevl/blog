@@ -207,6 +207,6 @@ That's it! The code is [part of TinyGL](https://github.com/aykevl/tinygl/blob/ma
 
 Here is an example how it looks:
 
-[!](/assets/tinygo-polygon-result.png)
+![](/assets/tinygo-polygon-result.png)
 
 I wrote this blog post because I couldn't find much information about this subject online, except for that one blog post I mentioned before. I hope this will be useful to some people, especially when it helps them make faster and more beautiful graphics on slow hardware.
