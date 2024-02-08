@@ -1,0 +1,81 @@
+<svg version="1.1" width="176" height="176" viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- background -->
+  <rect width="100%" height="100%" fill="white" />
+
+  <g transform="translate(12, 12)">
+    <!-- subpixel grid -->
+    <path stroke="#ccc" stroke-width="0.5"
+      d="M -16,-16 l 0,100
+        m 8,-100 l 0,100
+        m 8,-100 l 0,100
+        m 8,-100 l 0,100
+        m 8,-100 l 0,100
+        m 8,-100 l 0,100
+        m 8,-100 l 0,100
+        m 8,-100 l 0,100
+        m 8,-100 l 0,100
+        m 8,-100 l 0,100
+        m 8,-100 l 0,100
+        m 8,-100 l 0,100
+        m 8,-100 l 0,100"/>
+    <path stroke="#ccc" stroke-width="0.5"
+      d="M -16,-16 l 100,0
+         m -100,16 l 100,0
+         m -100,16 l 100,0
+         m -100,16 l 100,0
+         m -100,16 l 100,0
+         m -100,16 l 100,0
+         m -100,16 l 100,0"/>
+
+    <!-- pixel grid -->
+    <path stroke="black" stroke-width="0.5"
+      d="M -12,0 L 112,0
+         M -12,64 L 112,64
+         M 0,-12 L 0,112
+         M 64,-12 L 64,112"/>
+
+    <!-- background mask -->
+    <path fill="rgba(0, 0, 0, 0.4)"
+        d="M 40,0 L 64,0 L 64,64 L 16,64 Z"/>
+    <path fill="rgba(0, 0, 0, 0.1)"
+        d="M 64,-64 L 128,-64 L 128,128 L -8,128 Z"/>
+
+    <!-- label -->
+    <text x="1" y="-2" font-family="sans-serif" font-size="10">0</text>
+
+    <!-- pixels -->
+    <circle fill="#ccc" cx="4"  cy="8" r="2"/>
+    <circle fill="#ccc" cx="12" cy="8" r="2"/>
+    <circle fill="#ccc" cx="20" cy="8" r="2"/>
+    <circle fill="#ccc" cx="28" cy="8" r="2"/>
+    <circle fill="#ccc" cx="36" cy="8" r="2"/>
+    <circle fill="#000" cx="44" cy="8" r="2"/>
+    <circle fill="#000" cx="52" cy="8" r="2"/>
+    <circle fill="#000" cx="60" cy="8" r="2"/>
+    <circle fill="#ccc" cx="4"  cy="24" r="2"/>
+    <circle fill="#ccc" cx="12" cy="24" r="2"/>
+    <circle fill="#ccc" cx="20" cy="24" r="2"/>
+    <circle fill="#ccc" cx="28" cy="24" r="2"/>
+    <circle fill="#000" cx="36" cy="24" r="2"/>
+    <circle fill="#000" cx="44" cy="24" r="2"/>
+    <circle fill="#000" cx="52" cy="24" r="2"/>
+    <circle fill="#000" cx="60" cy="24" r="2"/>
+    <circle fill="#ccc" cx="4"  cy="40" r="2"/>
+    <circle fill="#ccc" cx="12" cy="40" r="2"/>
+    <circle fill="#ccc" cx="20" cy="40" r="2"/>
+    <circle fill="#000" cx="28" cy="40" r="2"/>
+    <circle fill="#000" cx="36" cy="40" r="2"/>
+    <circle fill="#000" cx="44" cy="40" r="2"/>
+    <circle fill="#000" cx="52" cy="40" r="2"/>
+    <circle fill="#000" cx="60" cy="40" r="2"/>
+    <circle fill="#ccc" cx="4"  cy="56" r="2"/>
+    <circle fill="#ccc" cx="12" cy="56" r="2"/>
+    <circle fill="#000" cx="20" cy="56" r="2"/>
+    <circle fill="#000" cx="28" cy="56" r="2"/>
+    <circle fill="#000" cx="36" cy="56" r="2"/>
+    <circle fill="#000" cx="44" cy="56" r="2"/>
+    <circle fill="#000" cx="52" cy="56" r="2"/>
+    <circle fill="#000" cx="60" cy="56" r="2"/>
+  </g>
+</svg>
