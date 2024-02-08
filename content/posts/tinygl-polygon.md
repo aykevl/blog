@@ -22,11 +22,11 @@ The core idea of this algorithm is very simple. It's actually very much like [mu
 
 The A-buffer algorithm samples each pixel 32 times, in an 8x4 pattern and averages the result. This is actually just a `uint32` (or `uint32_t`, or `u32`, depending on your language preferences). It's a mask: each set bit indicates the subpixel at the given position is set, while a clear bit means the subpixel is transparent. Because we only need a single color channel (the alpha channel) we only need a single mask per pixel.
 
-![](../../static/assets/tinygl-polygon-mask.svg)
+![](/assets/tinygl-polygon-mask.svg)
 
 The idea is now that you can clip any to-be-rendered shape to the pixel, and sample each subpixel to come up with a pixel mask. This sounds expensive, but there are various ways to do this efficiently and I'll describe one of these later. The blog post above describes how to do this using a lookup table. But to understand the algorithm, you don't need to know this, just that you can get an 8x4 bitmap cheaply to use as a mask. For example, the following figure would have a mask of `0b00000111_00001111_00011111_00111111` or `0x70f1f3f`.
 
-![](../../static/assets/tinygl-polygon-mask-clip.svg)
+![](/assets/tinygl-polygon-mask-clip.svg)
 
 The beauty of the algorithm is now that blending two pixel masks can be done like any bit operation, and is therefore incredibly fast:
 
@@ -40,29 +40,29 @@ Finally, to get the resulting alpha channel value of a mask you need to sum the 
 
 I originally wanted to draw antialiased lines so I'll use a line with a particular thickness (basically a rectangle) as an example polygon:
 
-![](../../static/assets/tinygl-polygon-line.svg)
+![](/assets/tinygl-polygon-line.svg)
 
 To draw this line, we convert it to a polygon to be filled:
 
-![](../../static/assets/tinygl-polygon-line2.svg)
+![](/assets/tinygl-polygon-line2.svg)
 
 A polygon can be converted to a number of trapezoids that when XORed together reproduce the original polygon. Trapezoids are made by drawing the edge horizontally until it falls entirely over the right edge, like the black areas here:
 
-![](../../static/assets/tinygl-polygon-trapezoidA.svg)
-![](../../static/assets/tinygl-polygon-trapezoidB.svg)
-![](../../static/assets/tinygl-polygon-trapezoidC.svg)
-![](../../static/assets/tinygl-polygon-trapezoidD.svg)
+![](/assets/tinygl-polygon-trapezoidA.svg)
+![](/assets/tinygl-polygon-trapezoidB.svg)
+![](/assets/tinygl-polygon-trapezoidC.svg)
+![](/assets/tinygl-polygon-trapezoidD.svg)
 
 In the case of a rectangle that's drawn at an angle, that's 4 trapezoids as you can see above.
 
 You can intuitively understand that XORing these four trapezoids together results in the original polygon as follows:
 
  1. XORing A and B together results in a shape that follows the left side of the polygon.  
-    ![](../../static/assets/tinygl-polygon-trapezoid-left.svg)
+    ![](/assets/tinygl-polygon-trapezoid-left.svg)
  2. XORing C and D together results in a shape that follows the right side of the polygon.  
-    ![](../../static/assets/tinygl-polygon-trapezoid-right.svg)
+    ![](/assets/tinygl-polygon-trapezoid-right.svg)
  3. XORing the previous two shapes together results in the original polygon.  
-    ![](../../static/assets/tinygl-polygon-trapezoid-combined.svg)
+    ![](/assets/tinygl-polygon-trapezoid-combined.svg)
 
 The same thing works for any polygon, even those that aren't convex or that have cutouts inside them.
 
@@ -108,36 +108,36 @@ There is a nice benefit to scanline rendering, which is that we only need to dra
 
 Let's start with an empty mask:
 
-![](../../static/assets/tinygl-polygon-scanline-start.svg)
+![](/assets/tinygl-polygon-scanline-start.svg)
 
 Let's say the first pixel has a single trapezoid intersecting it. That will result in the following mask:
 
-![](../../static/assets/tinygl-polygon-scanline0.svg)
+![](/assets/tinygl-polygon-scanline0.svg)
 
 For the next pixel, we'll extend the horizontal sub-scanlines (remember, these trapezoids extend infinitely to the right):
 
-![](../../static/assets/tinygl-polygon-scanline0-extend.svg)
+![](/assets/tinygl-polygon-scanline0-extend.svg)
 
 Let's say the next pixel doesn't have a trapezoid intersecting with it. That means we don't need to do anything, we can just use the mask as-is!
 
-![](../../static/assets/tinygl-polygon-scanline1.svg)
+![](/assets/tinygl-polygon-scanline1.svg)
 
 For the next pixel we have another trapezoid intersecting with it:
 
-![](../../static/assets/tinygl-polygon-scanline2-trapezoid.svg)
+![](/assets/tinygl-polygon-scanline2-trapezoid.svg)
 
 XORing the bits results in the following mask:
 
 
-![](../../static/assets/tinygl-polygon-scanline2.svg)
+![](/assets/tinygl-polygon-scanline2.svg)
 
 Extending the bits then results in the following initial mask for the pixel at X=3:
 
-![](../../static/assets/tinygl-polygon-scanline2-extend.svg)
+![](/assets/tinygl-polygon-scanline2-extend.svg)
 
 This pixel still intersects with the same trapezoid as before, which looks like this:
 
-![](../../static/assets/tinygl-polygon-scanline3-trapezoid.svg)
+![](/assets/tinygl-polygon-scanline3-trapezoid.svg)
 
 One detail visible here is that bits are only set when that's the _first_ point after the trapezoid edge. That isn't true for the two rows at the top (the edge clearly intersects at a point to the left of the pixel), but _is_ true for the third row: the point at the first column is inside while the point to the left (in the previous pixel) wasn't inside the trapezoid. So that means the whole row needs to be set.
 
@@ -145,7 +145,7 @@ Put another way, while it is an optimization to only apply an edge when an edge 
 
 When the two masks are XORed together we get an almost-clear pixel again with only two subpixels set, as would expected considering how the edge intersects this pixel:
 
-![](../../static/assets/tinygl-polygon-scanline3.svg)
+![](/assets/tinygl-polygon-scanline3.svg)
 
 Other cases follow from here:
 
