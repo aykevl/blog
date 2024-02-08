@@ -205,4 +205,8 @@ There are a number of other optimizations I've used, to make this as fast as pos
 
 That's it! The code is [part of TinyGL](https://github.com/aykevl/tinygl/blob/main/gfx/polygon.go) and you are free to reuse the algorithm however you wish.
 
+Here is an example how it looks:
+
+[!](/assets/tinygo-polygon-result.png)
+
 I wrote this blog post because I couldn't find much information about this subject online, except for that one blog post I mentioned before. I hope this will be useful to some people, especially when it helps them make faster and more beautiful graphics on slow hardware.
