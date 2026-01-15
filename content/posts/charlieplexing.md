@@ -17,7 +17,7 @@ That's two RGB LEDs, so six LEDs in total. (Yes, we're going to use RGB LEDs for
 The way to control this row of LEDs is as follows. Initially all pins are floating, and then:
 
   1. Set `P1` high.
-  2. Toggle all other pins (`P2`-`P7`) to low and back to floating, for a specific duration (depending on the intended brightness). To make the output look good, you can do this for all 6 LEDs at once - as long as they all return to floating in the end.
+  2. Toggle all other pins (`P2`-`P7`) to low and back to floating, [for a specific duration]({{< ref "bitplanes" >}}) (depending on the intended brightness). To make the output look good, you can do this for all 6 LEDs at once - as long as they all return to floating in the end.
   3. Set `P1` back to floating.
 
 Ok, that's nice. A single row of LEDs, controlled in a somewhat complicated fashion.
@@ -62,6 +62,8 @@ The way these LEDs are controlled in practice is by rapidly going over each row 
 
 The same problem exists for conventional LED matrices. In that case, you can only light up a single row at a time - just as with Charlieplexing. So Charlieplexing doesn't really have a disadvantage here.
 
+Also, I recommend you read my next post on [bitplanes]({{< ref "bitplanes" >}}) for a technique to turn a row of LEDs on for a specific duration that differs per LED. It's quite a nifty technique!
+
 ## Optimizing resistors
 
 You might have noticed that every LED in the above examples has its own resistor. But this is not necessary in practice - you can share resistors between LEDs. For example, R3-R7 in the first two rows can be the same as R3-R7 in the second colunn. And for the third row, all resistors except for R2 can be shared with the second row. So in the ideal case (with all the same resistor values) you can in fact just use 7 resistors. With varying values, you may need to have different groups of resistors: 2 or 3 resistors per GPIO pin for the different resistor values connected to the variously colored LEDs.
@@ -79,3 +81,5 @@ I hope that with this post I've shown that Charlieplexing can be just as powerfu
 I hope I've convinced you that Charlieplexing is actually pretty neat! It uses about half the number of pins as a matrix and works just as well if you apply some optimizations.
 
 One place I've used Charlieplexing is in my [36-LED earrings](/projects/earrings-rgb36). With a conventional matrix I would have needed 21 pins and a lot more complicated routing, and the chip I use on the earrings doesn't even have that many GPIO pins. Here I've used 12 pins to control all 36*3=108 LEDs.
+
+Next up: [how to bitbang matrices using bitplanes]({{< ref "bitplanes" >}}).
