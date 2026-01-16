@@ -1,7 +1,7 @@
 ---
-title: Bitplanes
+title: Binary Code Modulation
 date: 2026-01-15
-summary: Bitbanging many LEDs from a microcontroller can be very fast, when using bitplanes to organize the data in a nicer way
+summary: Bitbanging many LEDs from a microcontroller can be very fast, when using Binary Code Modulation and some assembly.
 ---
 
 This is somewhat of a continuation of my previous [post on Charlieplexing]({{< ref "charlieplexing" >}}).
@@ -39,7 +39,7 @@ With all of this prepared, you might think you'll need at least 8 GPIO writes to
 
 ![](/assets/bitplanes-intro.svg)
 
-That's quite annoying to deal with! You'll need to prepare all 8 of these values in advance, and write them one by one to the GPIO output register. Assuming your preferred chip even has 8 free registers you can use. But actually there's a simpler way, that requires far fewer writes. In this case only 4 of them with space in between. And it scales very well to higher bit depths.
+That's quite annoying to deal with! You'll need to prepare all 8 of these values in advance, and write them one by one to the GPIO output register. Assuming your preferred chip even has 8 free registers you can use. But actually there's a simpler way called [binary code modulation](https://www.batsocks.co.uk/readme/art_bcm_1.htm) that requires far fewer writes. In this case only 4 of them with space in between. And it scales very well to higher bit depths.
 
 Let's take a look at the values of these four LEDs again:
 
@@ -118,4 +118,4 @@ With careful instruction timing and ordering, you can do all sorts of things in 
 
 ## Conclusion
 
-Bitbanging many LEDs at once can be very fast! With some bithacking tricks, you can update all outputs in exactly as many clock cycles as the hardware allows. This can be used for [Charlieplexing]({{< ref "charlieplexing" >}}), to prepare data for a [hub75 display](https://www.adafruit.com/product/607), or just for a conventional LED matrix driven from GPIO pins.
+Bitbanging many LEDs at once can be very fast! With binary coded modulation and some bithacking tricks you can update all outputs in exactly as many clock cycles as the hardware allows. This can be used for [Charlieplexing]({{< ref "charlieplexing" >}}), to prepare data for a [hub75 display](https://www.adafruit.com/product/607), or just for a conventional LED matrix driven from GPIO pins.

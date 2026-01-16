@@ -82,4 +82,4 @@ I hope I've convinced you that Charlieplexing is actually pretty neat! It uses a
 
 One place I've used Charlieplexing is in my [36-LED earrings](/projects/earrings-rgb36). With a conventional matrix I would have needed 21 pins and a lot more complicated routing, and the chip I use on the earrings doesn't even have that many GPIO pins. Here I've used 12 pins to control all 36*3=108 LEDs.
 
-Next up: [how to bitbang matrices using bitplanes]({{< ref "bitplanes" >}}).
+Next up: [how to bitbang matrices using binary coded modulation]({{< ref "bitplanes" >}}).
