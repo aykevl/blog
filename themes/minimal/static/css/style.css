@@ -278,13 +278,14 @@ main {
 }
 
 main .home-selfie {
-    margin-top: 10px;
+    display: block;
+    margin: 20px auto 0;
 }
 main .home-text {
     margin-bottom: 20px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 650px) {
     main .home-selfie {
         float: left;
         margin-top: 0;
