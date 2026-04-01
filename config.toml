@@ -7,7 +7,7 @@ enableGitInfo = true
 [frontmatter]
 lastmod = ['lastmod', ':git', 'date', 'publishDate']
 
-[author]
+[params.author]
   name = 'Ayke van Laethem'
 
 [permalinks]
