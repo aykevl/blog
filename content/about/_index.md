@@ -13,7 +13,6 @@ And here are some other places I may or may not be reachable:
 
 * <a rel="me" href="https://github.com/aykevl">GitHub</a>
 * <a rel="me" href="http://stackoverflow.com/users/559350/ayke">Stack Overflow</a>
-* <a rel="me" href="https://www.twitter.com/aykevl">Twitter</a>
 * <a rel="me" href="https://www.linkedin.com/in/aykevl/">LinkedIn</a>
 
 You can also mail me at <i>ayke</i> on this host (aykevl.nl).
