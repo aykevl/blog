@@ -1,5 +1,22 @@
 {{ define "main" }}
 <main>
+
+<div class="home-about">
+	<img class="home-selfie" src="/assets/selfie.webp" width="200" height="200"/>
+	<div class="home-text">
+		<p>Hi! I'm Ayke. I love writing small efficient code for embedded devices and making things blink. You can read more on my <a href="/about/">about</a> page.</p>
+		
+		<p>Current projects:</p>
+		<ul>
+			<li><a href="https://tinygo.org/">TinyGo</a></li>
+			<li><a href="/projects/earrings-rgb36/">LED earrings</a> (<a href="https://lectronz.com/stores/nightvibe">for sale</a>!)</li>
+		</ul>
+		
+		I also write blog posts about things that interest me, see below.
+	</div>
+	<div style="clear: both"/>
+</div>
+
 {{ range where .Site.RegularPages.ByPublishDate.Reverse ".Section" "posts" }}
   <article class="post">
     <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>

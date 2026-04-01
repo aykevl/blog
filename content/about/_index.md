@@ -2,7 +2,7 @@
 title: About me
 ---
 
-Hi! My name is Ayke van Laëthem. I mostly work on [TinyGo](https://tinygo.org/) and random small electronics ([usually with some blinky lights](https://twitter.com/aykevl/status/1280135326913232896)).
+Hi! My name is Ayke van Laethem. I love writing small efficient code for embedded devices, preferably in [memory-safe languages](https://tinygo.org/). I also love making colorful LEDs.
 
 You can reach me here:
 

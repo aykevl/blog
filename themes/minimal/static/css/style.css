@@ -277,6 +277,24 @@ main {
 	}
 }
 
+main .home-selfie {
+    margin-top: 10px;
+}
+main .home-text {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 700px) {
+    main .home-selfie {
+        float: left;
+        margin-top: 0;
+    }
+    main .home-text {
+        margin-left: 220px;
+        min-height: 200px;
+    }
+}
+
 main h1 {
 	font-size: 1.6rem;
 	margin-top: 14px;
