@@ -17,6 +17,6 @@ I think this recipe was vaguely inspired by [this one](https://www.mosterdgeel.n
 
  1. Add a few cubes of dark chocolate (to taste) to a big mug. Add the vegan milk. Add the spices on top.
  2. Heat in a microwave until it's slightly too hot to drink.
- 3. Stir well.
+ 3. Stir well, until the chocolate has dissolved.
  4. Add a little bit of cherry liquer if you like, and stir again.
  5. Enjoy! (But try not to burn yourself).
