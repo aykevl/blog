@@ -1,5 +1,6 @@
 ---
 title: Vegan pea soup
+date: 2026-05-11
 summary: A variation on a traditional Dutch winter dish.
 ---
 

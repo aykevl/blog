@@ -1,5 +1,6 @@
 ---
 title: Hot chocolate
+date: 2026-05-11
 summary: Extra hot chocolate, with the addition of pepper.
 ---
 
