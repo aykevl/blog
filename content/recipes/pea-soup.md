@@ -38,7 +38,8 @@ The precise amount of ingredients doesn't matter much, you can vary with any kin
 ## Preparation
 
  1. Add the split peas in the pan with 2L water. Let it cook for 1-1½ hour. If a foam appears on the top, you can scoop it off (it is somewhat bitter).
- 2. Add all the other ingredients except for the lemon juice. You don't need to do it all at once, just cut the vegetables and gradually add them to the pan. I recommend starting with cutting as soon as you add the split peas to the water, cutting everything will take a while.
+ 2. Add all the other ingredients except for the lemon juice and the smoked sausage. You don't need to add all the vegetables at once, just cut them and gradually add them to the pan. I recommend starting with cutting as soon as you add the split peas to the water, cutting everything will take a while.
  3. Cook for 1-1½ hour more, until the pumpkin starts falling apart.
- 4. Add salt to taste.
- 5. Add the lemon juice.
+ 4. Cut the smoked sausage in slices and add it to the soup.
+ 5. Add salt to taste.
+ 6. Add the lemon juice.
