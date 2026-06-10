@@ -4,6 +4,10 @@ title: Projects
 
 Over the years I've made a few electronic projects, some of which I've written about.
 
+## [36-LED earrings with microphone](/projects/earrings-rgb36v2)
+
+An improved version of my 36-LED earrings, see below.
+
 ## [36-LED earrings](/projects/earrings-rgb36)
 
 Newer earrings I've made with 36 RGB LEDs, based on the much more powerful (and more power efficient) STM32L031 microcontroller.

@@ -9,4 +9,4 @@ I've made new and improved RGB LED earrings, with double the LEDs compared to my
 
 You can find the KiCad design files, source code, and instructions on how to program them [on the GitHub page](https://github.com/aykevl/things/tree/main/earring-ring-rgb36).
 
-I [sell them on Lectronz](https://lectronz.com/stores/nightvibe).
+I [used to sell them on Lectronz](https://lectronz.com/products/erring-ring-rgb36) but these are all sold out. See [the v2 version](/projects/earrings-rgb36v2) which has been improved in many ways!
