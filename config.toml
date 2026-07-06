@@ -1,5 +1,5 @@
 baseURL = 'https://aykevl.nl/'
-languageCode = 'en-us'
+locale = 'en-US'
 title = 'Ayke van Laethem'
 theme = "minimal"
 enableGitInfo = true
@@ -11,7 +11,7 @@ lastmod = ['lastmod', ':git', 'date', 'publishDate']
   name = 'Ayke van Laethem'
 
 [permalinks]
-  posts = "/:year/:month/:filename"
+  posts = "/:year/:month/:contentbasename"
 
 [markup.goldmark.renderer]
   unsafe = true
