@@ -3,7 +3,7 @@ title: RGB LED earrings (36 LEDs, with microphone)
 date: 2026-06-10
 ---
 
-These are new earrings, very similar to my [previous 36-LED earrings](/projects/earrings-rgb36/) but with an extra button (to make it easier to cycle through many modes) and a microphone (for audio reactivity and other upcoming features). Other than that, they're almost identical (same MCU, same LEDs, same PCB shape, etc).
+These are new earrings, very similar to my [previous 36-LED earrings](/projects/earrings-rgb36/) but with an extra button (to make it easier to cycle through many modes) and a microphone (for audio reactivity and [programming custom patterns](#custom-patterns)). Other than that, they're almost identical: same MCU, same LEDs, same PCB shape, etc.
 
 ![](/assets/earrings-rgb36v2.jpg)
 
