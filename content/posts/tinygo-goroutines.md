@@ -4,6 +4,11 @@ date: 2019-02-25T13:07:57
 lastmod: 2019-02-25T13:07:57
 summary: "TinyGo uses LLVM coroutines to implement goroutines. This post explains what coroutines are and how they're used to implement goroutines."
 ---
+
+**Old post**. TinyGo now uses regular stacks, like plain old threads and like the upstream Go scheduler. The automatic async/await model caused far too many issues to be practical.
+
+---
+
 Go uses goroutines for mostly-cooperative multitasking. In general, each goroutine has a separate stack where it can store things like temporary values and return addresses. At the moment the main Go compiler starts out with a 2kB stack for each goroutine and grows it as needed.
 
 TinyGo is different. The system it uses for goroutines is based on the async/await model like in C#, JavaScript and now also C++. In fact, we're borrowing the C++ implementation that's used in Clang/LLVM. The big difference here is that TinyGo inserts async/await keywords automatically.
